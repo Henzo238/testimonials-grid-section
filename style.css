@@ -74,6 +74,11 @@ p {
   background-color: hsl(263, 55%, 52%);
   color: hsl(0, 0%, 100%);
   grid-area: 1/1/2/3;
+  z-index: 0;
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-size: 19%;
+  background-position: top 0 right 59px;
+  background-repeat: no-repeat;
 }
 
 .jonathan {
