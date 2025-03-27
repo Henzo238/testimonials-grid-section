@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins&display=swap");
+@import "./base.css";
+
+$purple50: hsl(260, 100%, 95%);
+$purple300: hsl(264, 82%, 80%);
+$purple500: hsl(263, 55%, 52%);
+$white: hsl(0, 0%, 100%);
+$grey100: hsl(214, 17%, 92%);
+$grey200: hsl(0, 0%, 81%);
+$grey300: hsl(224, 10%, 45%);
+$grey400: hsl(217, 19%, 35%);
+$grey500: hsl(219, 29%, 14%);
+$black: hsl(0, 0%, 7%);
+
+body {
+  font-size: 13px;
+  background-color: $white;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 0.8fr;
+  gap: 1.5em;
+  padding: 5em 7em;
+  width: 70%;
+  height: 100%;
+  box-sizing: content-box; // Inclut le padding et la bordure dans les dimensions
+}
+.card {
+  border-radius: 7px;
+  padding: 2em 2.5em;
+  box-shadow: 25px 30px 25px rgba(0, 0, 0, 0.089);
+  max-width: 100%; // Empêche les cartes de dépasser la largeur du conteneur
+  max-height: 100%; // Empêche les cartes de dépasser la hauteur du conteneur
+}
+img {
+  border-radius: 50%;
+  border: 1px solid $white;
+  width: 1.8em;
+  margin-right: 1.1em;
+  align-self: center;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+h1 {
+  display: flex;
+  flex-direction: column;
+  line-height: 15px;
+  // font-size: 0.8em;
+}
+h2 {
+  font-size: 1.52em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.2em;
+}
+p {
+  line-height: 18px;
+  font-size: 1em;
+  text-rendering: auto;
+}
+.name {
+  font-weight: 500;
+  font-size: 1em;
+}
+.certification {
+  font-size: 0.8em;
+}
+
+.daniel {
+  background-color: $purple500;
+  color: hsl(0, 0%, 100%);
+  grid-area: 1/1/2/3;
+}
+.jonathan {
+  background-color: $grey400;
+  color: hsl(0, 0%, 100%);
+  grid-area: 1/3/2/4;
+}
+.jeanette {
+  background-color: $white;
+  grid-area: 2/1/3/2;
+}
+.patrick {
+  background-color: $grey500;
+  color: hsl(0, 0%, 100%);
+  grid-area: 2/2/3/4;
+}
+.kira {
+  background-color: $white;
+  grid-area: 1/4/3/5;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 auto;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 1em;
+    // width: 90%;
+    height: 90%;
+    // margin: 0 auto;
+  }
+  .card {
+    padding: 1.5em;
+    // margin: 0 auto;
+  }
+  img {
+    width: 1.5em;
+    margin-right: 1em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+}
