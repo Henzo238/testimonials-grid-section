@@ -28,14 +28,14 @@ body {
   padding: 5em 7em;
   width: 70%;
   height: 100%;
-  box-sizing: content-box; // Inclut le padding et la bordure dans les dimensions
+  box-sizing: content-box;
 }
 .card {
   border-radius: 7px;
   padding: 2em 2.5em;
   box-shadow: 25px 30px 25px rgba(0, 0, 0, 0.089);
-  max-width: 100%; // Empêche les cartes de dépasser la largeur du conteneur
-  max-height: 100%; // Empêche les cartes de dépasser la hauteur du conteneur
+  max-width: 100%;
+  max-height: 100%;
 }
 
 img {
@@ -55,7 +55,6 @@ h1 {
   display: flex;
   flex-direction: column;
   line-height: 15px;
-  // font-size: 0.8em;
 }
 h2 {
   font-size: 1.52em;
@@ -81,10 +80,10 @@ p {
   color: hsl(0, 0%, 100%);
   grid-area: 1/1/2/3;
   z-index: 0;
-  background-image: url("./images/bg-pattern-quotation.svg"); // Remplacez par le chemin de votre image
-  background-size: 19%; // Ajuste l'image pour couvrir toute la carte
-  background-position: top 0 right 59px; // Centre l'image dans la carte
-  background-repeat: no-repeat; // Empêche la répétition de l'image
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-size: 19%;
+  background-position: top 0 right 59px;
+  background-repeat: no-repeat;
 }
 .jonathan {
   background-color: $grey400;
@@ -113,13 +112,11 @@ p {
     display: flex;
     flex-direction: column;
     padding: 3em 1em;
-    // width: 90%;
+
     height: 90%;
-    // margin: 0 auto;
   }
   .card {
     padding: 1.5em;
-    // margin: 0 auto;
   }
   img {
     width: 1.5em;
